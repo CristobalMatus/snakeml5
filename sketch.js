@@ -17,11 +17,11 @@ function setup() {
   createCanvas(400, 400); // Crea un lienzo de 400x400 píxeles.
   w = floor(width / rez); // Calcula el ancho del campo de juego en unidades de juego.
   h = floor(height / rez); // Calcula la altura del campo de juego en unidades de juego.
-  frameRate(5); // Establece la velocidad del juego a 5 cuadros por segundo.
+  frameRate(1); // Establece la velocidad del juego a 5 cuadros por segundo.
   snake = new Snake(); // Crea una nueva instancia de la serpiente.
   foodLocation(); // Coloca la comida en una ubicación inicial aleatoria.
   video = createCapture(VIDEO);
-  video.hide();
+  //video.hide();
 }
 
 // Genera una nueva ubicación para la comida en el campo de juego.
